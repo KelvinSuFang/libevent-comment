@@ -381,7 +381,7 @@ epoll_dealloc(struct event_base* base, void* arg)
         free(epollop->events);
     if (epollop->epfd >= 0)
         close(epollop->epfd);
-
+//test
     memset(epollop, 0, sizeof(struct epollop));
     free(epollop);
 }
